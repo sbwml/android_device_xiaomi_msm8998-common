@@ -45,7 +45,7 @@ vendor/lib64/libbtnv.so
 # Camera
 lib/libMiCameraHal.so|799fe89fabb1ebdbc18b35ed2c72effe95ca7c91
 lib/libmisk.so|7679f1434e1186b62d831b74b11577a1cca8db94
-lib/libtrueportrait.so
+lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib64/libblurbuster.so
 lib64/libfiltergenerator.so
 lib64/libjni_blurbuster.so
@@ -161,7 +161,7 @@ vendor/lib64/libubifocus.so
 vendor/lib/libSonyIMX386PdafLibrary.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_12_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
 
 # Camera ISP
 vendor/lib/libmmcamera_isp_abf48.so
@@ -440,7 +440,7 @@ vendor/lib64/libperipheral_client.so
 # QMI
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
-lib64/libqminvapi.so
+lib64/libqminvapi.so:vendor/lib64/libqminvapi.so
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
@@ -483,7 +483,6 @@ framework/qti-telephony-common.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
-vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
