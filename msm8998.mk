@@ -16,6 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/MiuiCamera-vendor.mk)
+$(call inherit-product-if-exists, vendor/apps/GoogleGboard/app-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -186,6 +187,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# GoogleGboard
+PRODUCT_PACKAGES += \
+    GoogleGboard
 
 # GPS
 PRODUCT_PACKAGES += \
