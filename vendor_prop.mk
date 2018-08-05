@@ -167,10 +167,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.delta_time.enable=true
-
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2018-06-01
+    persist.backup.ntpServer="time.apple.com"
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
