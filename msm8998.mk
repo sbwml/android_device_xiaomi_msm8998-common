@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+$(call inherit-product-if-exists, vendor/apps/MiuiCamera/MiuiCamera-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -127,7 +128,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    MiuiCamera
 
 PRODUCT_PACKAGES += \
     libcamshim.vendor \
