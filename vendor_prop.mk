@@ -166,7 +166,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.delta_time.enable=true
+    persist.delta_time.enable=true \
     persist.backup.ntpServer="time.apple.com"
 
 # WFD
